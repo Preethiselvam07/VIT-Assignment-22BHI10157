@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .btn {
+            background-color: #f4a261;
+            border: none;
+            padding: 8px 12px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" value="Vincent Maverick Durano" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" value="Vinz" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" value="********" required>
+
+            <label for="repassword">Re Password:</label>
+            <input type="password" id="repassword" value="********" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" value="Cebu, Philippines" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" value="22" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <button type="submit" class="btn">Save</button>
+        </form>
+    </div>
+
+</body>
+</html>
